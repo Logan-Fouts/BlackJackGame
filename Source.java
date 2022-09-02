@@ -3,7 +3,9 @@ package BlackJackGame;
 public class Source{
 
     public static void main(String[] args) {
-        // add stuff
+        Cards Deck = new Cards();
+        Deck.genCards();
+        System.out.println(Deck);
     }
 
 
