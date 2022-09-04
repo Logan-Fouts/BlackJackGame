@@ -21,9 +21,15 @@ public class Player {
         name = scanner.nextLine();
     }
 
+    public void setDealerName() {
+        System.out.print("Enter A Name For The Dealer: ");
+        name = scanner.nextLine();  
+    }
+
     public String getName() {
         return name;
     }
+
 
      public int getCards(int j) {
         return playerCards.getCurrCard(j);
