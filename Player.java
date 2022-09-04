@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 
 public class Player {
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);                     //Creates Card Object and an ArrayList<Integer>
     String name;
-    Cards playerCards = new Cards();
+    Cards playerCards = new Cards();                         
     ArrayList<Integer> cards = new ArrayList<Integer>();
     int j;
     
@@ -35,7 +35,7 @@ public class Player {
         return playerCards.getCurrCard(j);
     } 
 
-    public ArrayList<Integer> generatePlayerCards(){
+    public ArrayList<Integer> generatePlayerCards(){           //Generates Players Deck of Cards
         return playerCards.genCards();
     }
 }
