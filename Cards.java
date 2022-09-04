@@ -1,5 +1,4 @@
 package BlackJackGame;
-
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -7,10 +6,10 @@ public class Cards {
     ArrayList<Integer> Cards = new ArrayList<Integer>();
     static int max = 11;
     static int min = 1; 
-    int j = 0;
-    ArrayList<Integer> crds = Cards;
+    int j = 0, i = 0;
         public void main() {
              genCards();
+             getCurrCard(i);
         }
         
         public ArrayList<Integer> genCards() {
@@ -22,10 +21,10 @@ public class Cards {
             return Cards;
         }
 
-       /*  public int getCards(int j) {
-            int curCard = crds.get(j);
-            return curCard;
-        }*/
+        public int getCurrCard(int i) {
+            return Cards.get(i);
+        }
+
 
 
        

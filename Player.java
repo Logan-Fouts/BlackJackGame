@@ -6,22 +6,30 @@ import java.util.Scanner;
 public class Player {
     Scanner scanner = new Scanner(System.in);
     String name;
-    //ArrayList<Integer> cards = new ArrayList<Integer>();
     Cards playerCards = new Cards();
+    ArrayList<Integer> cards = new ArrayList<Integer>();
     int j;
-    //int currentCard = getCards(j);
+    
     public void main(String[] args) {
         setName();
-        playerCards.genCards();
+        cards = generatePlayerCards();
+        getCards(j);
     }
     
     public void setName() {
-        System.out.print("Enter Your Name: ");
+        System.out.print("\n\nEnter Your Name: ");
         name = scanner.nextLine();
     }
 
-   /*  public int getCards(int j) {
-        int currentCard = playerCards.getCards(j);
-        return currentCard;
-    } */
+    public String getName() {
+        return name;
+    }
+
+     public int getCards(int j) {
+        return playerCards.getCurrCard(j);
+    } 
+
+    public ArrayList<Integer> generatePlayerCards(){
+        return playerCards.genCards();
+    }
 }
