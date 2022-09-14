@@ -1,4 +1,4 @@
-# BlackJackGame
+# black_jack
 Just a terminal game of black jack.
 I Created this to learn java and brush up on coding in general.
 I know this is not exactly how the game works.
